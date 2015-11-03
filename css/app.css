@@ -1,0 +1,14 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+img{
+  width: 40px;
+  height: 40px;
+}

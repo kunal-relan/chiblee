@@ -1,0 +1,23 @@
+
+{{detail._id}}
+{{detail.name}}
+{{detail.type}}
+{{location}}
+   <div id="map"></div>
+<div ng-controller="commentController">
+<form name="userForm" ng-submit="sendPost(detail._id,comment)" >
+    <div class="form-group">
+      <input type="text" name="name" class="form-control" ng-model="user.name">
+      {{user.name}}
+    </div>
+      <button type="submit" class="btn btn-primary" >Submit</button>
+
+   </form>
+
+
+   <li ng-repeat="comm in comment">
+    {{comm}}
+
+   </li>
+  Rating : {{detail.ratings}}
+</div>

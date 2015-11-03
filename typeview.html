@@ -1,0 +1,10 @@
+<li ng-repeat="data in type">
+
+<a href="#/detail/{{data._id}}">{{data.type}}</a>
+<h4>{{data.address}}</h4>
+<h4>{{data._id}}</h4>
+</li>
+<div ng-controller="mapCtrl">
+<button ng-click="map(type)">MapView</button>
+</div>
+<div id="map"></div>
